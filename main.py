@@ -1,7 +1,7 @@
 import logging
+import os
 import python_weather
 import datetime
-from telegram import __version__ as TG_VER
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
@@ -73,7 +73,7 @@ def main() -> None:
     # Create the Application and pass it your bot's token.
     application = (
         Application.builder()
-        .token("*****TOKEN*****")
+        .token(os.environ["BOT_TOKEN"])
         .build()
     )
     # on different commands - answer in Telegram

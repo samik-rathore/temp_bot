@@ -1,0 +1,3 @@
+python-telgram-bot
+python-telegram-bot[job-queue]
+python-weather
